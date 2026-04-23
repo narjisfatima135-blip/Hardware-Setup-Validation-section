@@ -32,7 +32,7 @@ VSDSquadron PRO (SiFive based RISC-V board)
 ![Driver](screenshots/driver.jpg)
 
 ### Build Process
-![Build](screenshots/build.jpg)
+![setup](screenshots/setup.jpg)
 
 ### Debug Session
 ![Debug](screenshots/debug.jpg)
