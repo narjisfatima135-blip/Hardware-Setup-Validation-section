@@ -7,7 +7,7 @@ This repository documents the complete setup and validation of the VSDSquadron P
 ---
 
 ## Contents
-- Installation Guide
+- Installation Guide(installation_guide.md)
 - System Configuration
 - Build & Flash Commands
 - Hardware Specifications
