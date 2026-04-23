@@ -11,6 +11,7 @@ This repository documents the complete setup and validation of the VSDSquadron P
 - [System Configuration](system_config.md)
 - [Commands Used](commands_used.md)
 - [Hardware Summary](hardware_summary.md)
+- [issues_faced](issues_faced.md)
 - [Screenshots](screenshots/)
 
 ---
