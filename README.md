@@ -31,7 +31,7 @@ VSDSquadron PRO (SiFive based RISC-V board)
 ### Driver Installation
 ![Driver](screenshots/driver.jpg)
 
-### Build Process
+### setup Process
 ![setup](screenshots/setup.jpg)
 
 ### Debug Session
