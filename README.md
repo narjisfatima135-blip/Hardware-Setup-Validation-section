@@ -35,8 +35,12 @@ VSDSquadron PRO (SiFive based RISC-V board)
 ![Setup](screenshots/setup.jpg)
 
 ### Debug Session
-![Debug](screenshots/Debug.jpg)
+![Debug](screenshots/debug.jpg)
 
 ### Output / Execution
 ![Output](screenshots/output.jpg)
+
+### Hardware Setup
+![Board](screenshots/board.jpg)
+
 
