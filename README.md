@@ -26,16 +26,17 @@ VSDSquadron PRO (SiFive based RISC-V board)
 - Run validation program
 - Document full process
 
-  ## Screenshots
+## Screenshots
 
 ### Driver Installation
 ![Driver](screenshots/driver.jpg)
 
-### setup Process
-![setup](screenshots/setup.jpg)
+### Setup Process
+![Setup](screenshots/setup.jpg)
 
 ### Debug Session
-![Debug](screenshots/debug.jpg)
+![Debug](screenshots/Debug.jpg)
 
 ### Output / Execution
 ![Output](screenshots/output.jpg)
+
