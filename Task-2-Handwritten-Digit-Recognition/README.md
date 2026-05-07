@@ -227,12 +227,15 @@ The serial terminal displays prediction outputs.
 Example terminal output:
 
 ```text
-BitNet MNIST Dataset Handwritten Digit Classification
+BitNet MNIST Dataset Handwritten Digit Classification on sifive-hifive1.
 
-Inference of Sample 1 -> Prediction: 7
-Inference of Sample 2 -> Prediction: 2
-Inference of Sample 3 -> Prediction: 0
-Inference of Sample 4 -> Prediction: 5
+
+
+By Narjis FatimaStarting MNIST inference...
+Inference of Sample 1   Prediction: 7   Label: 7
+Inference of Sample 2   Prediction: 2   Label: 2
+Inference of Sample 3   Prediction: 0   Label: 1
+Inference of Sample 4   Prediction: 0   Label: 0
 ```
 
 This confirms successful deployment and execution on RISC-V hardware.
