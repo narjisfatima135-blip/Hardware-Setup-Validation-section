@@ -405,12 +405,13 @@ Through this project, I learned:
 
 ### Build Output
 
-![Build Output](Task-2-Handwritten-Digit-Recognition/screenshots/build_output.jpg)
+![Build Output](Task-2-Handwritten-Digit-Recognition/screenshots/build_output.png)
 
 ### Program Output
 
-![Program Output](Task-2-Handwritten-Digit-Recognition/screenshots/output.jpg)
+![Program Output](Task-2-Handwritten-Digit-Recognition/screenshots/output.png)
 
+---
 # Conclusion
 
 This project successfully demonstrates deployment of a quantized handwritten digit recognition model on VSDsquadron PRO using RISC-V architecture and embedded AI techniques.
