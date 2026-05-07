@@ -297,6 +297,17 @@ Verify:
 - OpenOCD configuration correct
 
 ---
+### output
+BitNet MNIST Dataset Handwritten Digit Classification on sifive-hifive1.
+
+
+
+By Narjis FatimaStarting MNIST inference...
+Inference of Sample 1   Prediction: 7   Label: 7
+Inference of Sample 2   Prediction: 2   Label: 2
+Inference of Sample 3   Prediction: 0   Label: 1
+Inference of Sample 4   Prediction: 0   Label: 0
+---
 
 # Learning Outcomes
 
