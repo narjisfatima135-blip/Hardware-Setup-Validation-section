@@ -88,6 +88,9 @@ VSDSquadron PRO (SiFive based RISC-V board)
 ![Board](screenshots/board.jpg)
 
 
+
+
+# Task 2 – Embedded AI Model for Handwritten Digit Recognition
 # BitNet-like Quantized MNIST Classification on VSDsquadron PRO
 
 This project demonstrates deployment of a quantized handwritten digit recognition model on the VSDsquadron PRO board powered by the SiFive FE310-G002 RISC-V microcontroller.
