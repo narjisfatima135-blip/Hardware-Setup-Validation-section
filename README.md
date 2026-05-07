@@ -69,11 +69,6 @@ VSDSquadron PRO (SiFive based RISC-V board)
 
 ---
 
-## Objective
-- Install required tools
-- Configure environment
-- Run validation program
-- Document full process
 
 ## Screenshots
 
