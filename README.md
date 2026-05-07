@@ -401,6 +401,15 @@ Through this project, I learned:
 - Freedom Studio configuration
 
 ---
+## Screenshots
+
+### Build Output
+
+![Build Output](Task-2-Handwritten-Digit-Recognition/screenshots/build_output.jpg)
+
+### Program Output
+
+![Program Output](Task-2-Handwritten-Digit-Recognition/screenshots/output.jpg)
 
 # Conclusion
 
