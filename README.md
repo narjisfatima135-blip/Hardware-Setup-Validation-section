@@ -681,7 +681,7 @@ Predicted digit: 9, True Label: 9, Status: PASS
 ---
 ## Inputs
 
-![Inputs](screenshots/inputs.png)
+![Inputs](screenshots/28x28_inputs.png)
 
 ## Predictions
 
