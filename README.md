@@ -436,7 +436,7 @@ The following parameters were modified and tested:
 - Input Preprocessing Techniques
 
 ### Model Summary
-
+```text
 Model: "sequential_12"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -465,6 +465,7 @@ Cleaned up temporary Keras model file: mnist_baseline_model.keras
 Model Details:
 Input: [{'name': 'serving_default_flatten_12_input:0', 'index': 0, 'shape': array([ 1, 12, 12,  1]), 'shape_signature': array([-1, 12, 12,  1]), 'dtype': <class 'numpy.int8'>, 'quantization': (0.003921568859368563, -128), 'quantization_parameters': {'scales': array([0.00392157], dtype=float32), 'zero_points': array([-128]), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
 Output: [{'name': 'StatefulPartitionedCall:0', 'index': 14, 'shape': array([ 1, 10]), 'shape_signature': array([-1, 10]), 'dtype': <class 'numpy.int8'>, 'quantization': (0.00390625, -128), 'quantization_parameters': {'scales': array([0.00390625], dtype=float32), 'zero_points': array([-128]), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+```
 ----
 For details please refer to the comprehensive attachments:
 
@@ -490,7 +491,7 @@ iii.https://medium.com/@sushmita2310/12-types-of-activation-functions-in-neural-
 - Verified correct inference output.
 
 ### Output
-
+```text
 The optimized model successfully predicted handwritten MNIST digits and produced accurate results suitable for deployment on embedded hardware.
 8-bit Quantized TFLite MNIST on SiFive HiFive1.
 
@@ -677,6 +678,7 @@ Processing layer: in=64, out=10
 Output layer values: -83887 -30012 -89381 -44941 -67373 12827 -155838 -1235 -51094 3352 
 Finding prediction...
 Predicted digit: 9, True Label: 9, Status: PASS
+```
 
 ---
 ## Inputs
