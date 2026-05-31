@@ -477,11 +477,10 @@ Error Resolution Log.
 
 References:
 
-i. Optimizing_Edge_AI_A_Comprehensive_Survey.pdf
-
+i. [Optimizing Edge AI: A Comprehensive Survey](./Optimizing_Edge_AI_A_Comprehensive_Survey.pdf)
 ii. https://docs.edgeimpulse.com/docs/concepts/machine-learning/neural-networks/loss-functions
+iii. [12 Types of Activation Functions in Neural Networks: A Comprehensive Guide (Medium)](https://medium.com/@sushmita2310/12-types-of-activation-functions-in-neural-networks-a-comprehensive-guide-a441ecefb439?utm_source=chatgpt.com)
 
-iii.https://medium.com/@sushmita2310/12-types-of-activation-functions-in-neural-networks-a-comprehensive-guide-a441ecefb439
 ---
 ### Optimization Results
 
@@ -679,6 +678,7 @@ Output layer values: -83887 -30012 -89381 -44941 -67373 12827 -155838 -1235 -510
 Finding prediction...
 Predicted digit: 9, True Label: 9, Status: PASS
 ```
+---
 
 ---
 ## Inputs
