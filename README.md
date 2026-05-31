@@ -704,6 +704,7 @@ This task provided practical experience in neural network optimization, quantiza
 TASK 4: Complete Inference Pipeline Successfully Tested and Deployed
 ---
 Overview
+-
 
 The final stage of the project focused on validating the complete inference pipeline on the SiFive HiFive1 RISC-V development board. After optimizing and quantizing the neural network model, the generated model parameters were integrated into the embedded application and deployed successfully on the target hardware.
 
@@ -711,11 +712,13 @@ The objective of this phase was to verify that the quantized model could correct
 
 ---
 Directory Structure
+-
 
 The project contains all required files for model training, quantization, parameter generation, deployment, and inference testing.
 
 ---
 Prerequisites
+-
 
 The following software and hardware components were used:
 
@@ -731,6 +734,7 @@ PySerial
 
 ----
 Workflow
+-
 The complete deployment pipeline consisted of the following stages:
 
 Train the neural network model using TensorFlow.
@@ -746,14 +750,17 @@ The handwritten digit image captured and processed for testing is shown below.
 ---
 
 Deployment Output
+-
 The application was successfully deployed and executed on the target hardware. The processed image was supplied to the inference engine, and the model generated the corresponding prediction.
 
 ---
 Freedom Studio Execution
+-
 The terminal output from Freedom Studio confirms successful execution of the inference pipeline, including layer processing, activation calculations, and final prediction generation.
 
 ---
 Results
+-
 Model successfully converted to INT8 TFLite format.
 C model parameters generated successfully.
 Application compiled without errors.
@@ -778,6 +785,7 @@ To Run Inference
 
 ---
 Conclusion
+-
 The neural network training optimization task was completed successfully. Multiple model configurations and optimization techniques were evaluated to improve accuracy while maintaining suitability for embedded deployment.
 
 The final optimized model was quantized to INT8 TensorFlow Lite format, significantly reducing memory usage and computational requirements. The generated model parameters were integrated into the embedded RISC-V application and deployed successfully using Freedom Studio.
