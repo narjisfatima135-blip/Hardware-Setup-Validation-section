@@ -478,7 +478,9 @@ Error Resolution Log.
 References:
 
 i. [Optimizing Edge AI: A Comprehensive Survey](./Optimizing_Edge_AI_A_Comprehensive_Survey.pdf)
+
 ii. https://docs.edgeimpulse.com/docs/concepts/machine-learning/neural-networks/loss-functions
+
 iii. [12 Types of Activation Functions in Neural Networks: A Comprehensive Guide (Medium)](https://medium.com/@sushmita2310/12-types-of-activation-functions-in-neural-networks-a-comprehensive-guide-a441ecefb439?utm_source=chatgpt.com)
 
 ---
@@ -688,3 +690,16 @@ Predicted digit: 9, True Label: 9, Status: PASS
 ## Predictions
 
 ![Predictions](screenshots/predictions.png)
+
+---
+### Deployment Output
+
+![Deployment Output](screenshots/deployment_output.png)
+
+## Conclusion
+
+The neural network training optimization task was completed successfully. Multiple training configurations were evaluated to improve model accuracy while maintaining suitability for deployment on the VSDSquadron PRO board.
+
+The final optimized model was quantized to INT8 TFLite format, reducing memory usage and improving deployment efficiency. The inference pipeline was successfully tested, and the model accurately predicted MNIST handwritten digits on the target hardware platform.
+
+This task provided practical experience in neural network optimization, quantization, model deployment, and embedded AI inference on RISC-V hardware.
