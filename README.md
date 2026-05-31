@@ -690,7 +690,7 @@ Predicted digit: 9, True Label: 9, Status: PASS
 ---
 ### Deployment Output
 
-![Deployment Output](screenshots/deployment_output.png)
+![Deployment Output](screenshots/deployment_output.jpeg)
 
 ## Conclusion
 
