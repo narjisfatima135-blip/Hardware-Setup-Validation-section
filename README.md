@@ -415,3 +415,274 @@ Through this project, I learned:
 # Conclusion
 
 This project successfully demonstrates deployment of a quantized handwritten digit recognition model on VSDsquadron PRO using RISC-V architecture and embedded AI techniques.
+
+---
+
+## TASK-3 : Neural Network Training Optimization
+
+### Objective
+
+The objective of this task was to optimize neural network training parameters to improve model accuracy while maintaining suitability for deployment on the VSDSquadron PRO board.
+
+### Training Experiments
+
+The following parameters were modified and tested:
+
+- Learning Rate
+- Activation Functions
+- Dense Layer Configuration
+- Number of Training Epochs
+- Model Quantization
+- Input Preprocessing Techniques
+
+### Model Summary
+
+Model: "sequential_12"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten_12 (Flatten)        (None, 144)               0         
+                                                                 
+ dense_36 (Dense)            (None, 64)                9280      
+                                                                 
+ leaky_re_lu_6 (LeakyReLU)   (None, 64)                0         
+                                                                 
+ dense_37 (Dense)            (None, 64)                4160      
+                                                                 
+ leaky_re_lu_7 (LeakyReLU)   (None, 64)                0         
+                                                                 
+ dense_38 (Dense)            (None, 10)                650       
+                                                                 
+=================================================================
+Total params: 14090 (55.04 KB)
+Trainable params: 14090 (55.04 KB)
+Non-trainable params: 0 (0.00 Byte)
+
+INT8 TFLite model saved to mnist_model_int8.tflite
+INT8 Model Size: 17768 bytes (17.35 KB)
+Cleaned up temporary Keras model file: mnist_baseline_model.keras
+
+Model Details:
+Input: [{'name': 'serving_default_flatten_12_input:0', 'index': 0, 'shape': array([ 1, 12, 12,  1]), 'shape_signature': array([-1, 12, 12,  1]), 'dtype': <class 'numpy.int8'>, 'quantization': (0.003921568859368563, -128), 'quantization_parameters': {'scales': array([0.00392157], dtype=float32), 'zero_points': array([-128]), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+Output: [{'name': 'StatefulPartitionedCall:0', 'index': 14, 'shape': array([ 1, 10]), 'shape_signature': array([-1, 10]), 'dtype': <class 'numpy.int8'>, 'quantization': (0.00390625, -128), 'quantization_parameters': {'scales': array([0.00390625], dtype=float32), 'zero_points': array([-128]), 'quantized_dimension': 0}, 'sparsity_parameters': {}}]
+----
+For details please refer to the comprehensive attachments:
+
+/src
+
+Image Processing
+
+Error Resolution Log.
+
+References:
+
+i. Optimizing_Edge_AI_A_Comprehensive_Survey.pdf
+
+ii. https://docs.edgeimpulse.com/docs/concepts/machine-learning/neural-networks/loss-functions
+
+iii.https://medium.com/@sushmita2310/12-types-of-activation-functions-in-neural-networks-a-comprehensive-guide-a441ecefb439
+---
+### Optimization Results
+
+- Successfully trained and optimized the neural network.
+- Generated an INT8 quantized TFLite model.
+- Reduced model size for embedded deployment.
+- Verified correct inference output.
+
+### Output
+
+The optimized model successfully predicted handwritten MNIST digits and produced accurate results suitable for deployment on embedded hardware.
+8-bit Quantized TFLite MNIST on SiFive HiFive1.
+
+
+
+By Narjis Fatima
+Starting MNIST inference...
+Clearing arrays...
+Processing input for sample 1
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 127 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -61807 -25412 -16241 -6761 -82783 -24893 -197008 25675 -55464 -84508 
+Finding prediction...
+Predicted digit: 7, True Label: 7, Status: PASS
+
+Clearing arrays...
+Processing input for sample 2
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: -96 -96 127 -96
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 127 -103
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -90097 -7702 33439 -31831 -96813 -24433 -170098 -38725 -17284 -116708 
+Finding prediction...
+Predicted digit: 2, True Label: 2, Status: PASS
+
+Clearing arrays...
+Processing input for sample 3
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 -103 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -88717 13688 -1291 -50001 -17923 -63073 -84308 25675 -58684 -116018 
+Finding prediction...
+Predicted digit: 7, True Label: 1, Status: FAIL
+
+Clearing arrays...
+Processing input for sample 4
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 -96 -96
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: 127 -103 127 -103
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -21834 -73887 -41751 -90044 -43817 -15372 -67014 5118 -61485 -94200 
+Finding prediction...
+Predicted digit: 0, True Label: 0, Status: PASS
+
+Clearing arrays...
+Processing input for sample 5
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: -96 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 127 127 -103
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -25467 -8162 -53271 -105661 -36093 -103553 -70738 -25615 -16824 -19648 
+Finding prediction...
+Predicted digit: 4, True Label: 4, Status: PASS
+
+Clearing arrays...
+Processing input for sample 6
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: 127 -103 127 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -74917 21278 -47751 -74151 -57023 -46973 -61078 -11585 -66044 -63808 
+Finding prediction...
+Predicted digit: 1, True Label: 1, Status: PASS
+
+Clearing arrays...
+Processing input for sample 7
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 127 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -75837 -28402 -81331 -52531 -42533 -25583 -87988 -19175 -36144 -85658 
+Finding prediction...
+Predicted digit: 4, True Label: 4, Status: PASS
+
+Clearing arrays...
+Processing input for sample 8
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: -96 -96 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 127 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -125747 -75092 -60861 -20331 -6193 -43753 -147558 -46315 6406 24972 
+Finding prediction...
+Predicted digit: 9, True Label: 9, Status: PASS
+
+Clearing arrays...
+Processing input for sample 9
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 -96 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: 127 -103 127 -103
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -98607 -4712 -55341 -94621 -7803 -2813 -55098 -6065 -51324 -89568 
+Finding prediction...
+Predicted digit: 5, True Label: 5, Status: PASS
+
+Clearing arrays...
+Processing input for sample 10
+Starting first layer...
+Processing layer: in=144, out=64
+Applying ReLU and Requantizing first layer...
+Layer1 ReLU range: -96 to 127
+Layer1 sample activations: 127 127 127 127
+Starting second layer...
+Processing layer: in=64, out=64
+Applying ReLU and Requantizing second layer...
+Layer2 ReLU range: -103 to 127
+Layer2 sample activations: -103 -103 127 127
+Starting final layer...
+Processing layer: in=64, out=10
+Output layer values: -83887 -30012 -89381 -44941 -67373 12827 -155838 -1235 -51094 3352 
+Finding prediction...
+Predicted digit: 9, True Label: 9, Status: PASS
+
+---
+## Inputs
+
+![Inputs](screenshots/inputs.png)
+
+## Predictions
+
+![Predictions](screenshots/predictions.png)
