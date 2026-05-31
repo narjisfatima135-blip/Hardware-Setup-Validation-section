@@ -469,7 +469,6 @@ Output: [{'name': 'StatefulPartitionedCall:0', 'index': 14, 'shape': array([ 1, 
 ----
 For details please refer to the comprehensive attachments:
 
-[src](./Task-2-Hardwritten-Digital-Recognition)
 
 References:
 
