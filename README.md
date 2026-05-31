@@ -681,11 +681,11 @@ Predicted digit: 9, True Label: 9, Status: PASS
 ---
 ## Inputs
 
-![Inputs](screenshots/28x28_inputs.png)
+![Inputs](screenshots/28x28_input.png)
 
 ## Predictions
 
-![Predictions](screenshots/predictions.png)
+![Predictions](screenshots/12x12_inferred_output.png)
 
 ---
 ### Deployment Output
